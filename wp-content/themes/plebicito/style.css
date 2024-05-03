@@ -1,0 +1,347 @@
+/*
+Theme Name: Plebicito
+Author: Núcleo de Tecnologia do MTST
+Description: Tema para votação em plebiscito
+*/
+
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Rubik", sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset CSS */
+
+.cadastro-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.cadastro-capa {
+    background-color: #D32929;
+}
+
+.cadastro-item {
+    width: 50%;
+    height: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-capa {
+    width: 56%;
+}
+
+form#progressive-form {
+    max-width: 400px;
+}
+
+.cadastro-form {
+    width: 44%;
+    border-radius: 30px 0 0 30px;
+    background-color: #fff;
+    margin-left: -30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2, p, input {
+    font-family: "Rubik", sans-serif;
+}
+
+.formulario {
+    width: 400px;
+    max-width: 100%;
+}
+
+.formulario .forminator-ui.forminator-custom-form[data-design=default] .forminator-pagination-steps {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-pagination-steps .forminator-break {
+    display: none;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-pagination-steps .forminator-step .forminator-step-dot {
+    border: none;
+    background-color: #741717;
+    width: 60px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-pagination-steps .forminator-step.forminator-current ~ .forminator-step .forminator-step-dot {
+    border: none;
+    background-color: #741717;
+    width: 24px;
+}
+
+.formulario .forminator-ui.forminator-custom-form[data-design=default] .forminator-pagination-steps .forminator-step {
+    display: block;
+}
+
+button.forminator-button.forminator-button-back {
+    display: none !important;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.23px;
+    text-align: center;
+}
+
+p {
+    font-family: Rubik;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.23;
+    text-align: center;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-label {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.23px;
+    text-align: left;
+    color: #1E1E1E;
+    padding: 0 6px;
+    z-index: 1;
+    position: relative;
+    background: #fff;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-input {
+    font-size: 14px;
+    font-family: Rubik;
+    font-weight: 400;
+    letter-spacing: -0.23px;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 50px;
+    padding: 0 26px;
+    margin-top: -8px;
+    z-index: 0;
+    position: relative;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-label .forminator-required {
+    display: none;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-button-next,
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-button-next:hover,
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-button-submit,
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-button-submit:hover {
+    background-color: #151515;
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 600;
+    width: 190px;
+    margin: 0 auto;
+    height: 54px;
+    border-radius: 10px;
+}
+
+.enquete-container {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+}
+
+.enquete-imagem {
+    width: 50%;
+    height: 144px;
+    background-size: auto;
+    background-image: url(img/header-enquete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h3 {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+div#checkbox-1,
+div#checkbox-2 {
+    border: 1px solid #0D0D0D;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 227px;
+    width: 440px;
+}
+
+.enquete h4 {
+    font-family: Rubik;
+    font-size: 16px!important;
+    font-weight: 500!important;
+    line-height: 1.3!important;
+    text-align: center!important;
+    width: 324px!important;
+    margin: 0 auto!important;
+    padding: 0!important;
+    margin-bottom: 30px !important;
+}
+
+.forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox {
+    margin-left: 20% !important;
+    margin-right: 0 !important;
+}
+
+span.forminator-checkbox-box {
+    background: #fff !important;
+}
+
+.forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox {
+    margin-left: 18%;
+    margin-right: 0;
+}
+
+.forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox:first-of-type {
+    color: #00AA5B;
+    text-transform: uppercase;
+}
+
+.forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox:last-of-type {
+    color: #D32929;
+    text-transform: uppercase;
+}
+
+/* .forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox .forminator-checkbox-box {
+    border-color: #D32929;
+    color: #D32929;
+}
+
+.forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox .forminator-checkbox-box:first-of-type {
+    border-color: #00AA5B;
+    color: #00AA5B;
+} */
+
+/* Estilo para a checkbox "Sim" */
+#forminator-field-checkbox-1-1-6634c79db4267-label .forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox .forminator-checkbox-box {
+    border-color: #00AA5B!important;
+    color: #00AA5B!important; 
+}
+
+/* Estilo para a checkbox "Não" */
+#forminator-field-checkbox-1-2-6634c79db4267-label .forminator-ui#forminator-module-11.forminator-design--default .forminator-checkbox .forminator-checkbox-box {
+    border-color: #D32929!important;
+    color: #D32929!important;
+}
+
+.formulario .forminator-ui#forminator-module-11.forminator-design--default .forminator-response-message.forminator-success {
+    background-color: #fff;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+@media (max-width:960px) {
+    .cadastro-container {
+        flex-direction: column;
+    }
+    .cadastro-item {
+        width: 100%;
+        height: 505px;
+    }
+    .cadastro-form {
+        border-radius: 30px 30px 0 0;
+        margin-left: 0;
+        margin-top: -30px;
+        padding: 20px 0;
+    }
+    .formulario {
+        width: 400px;
+        max-width: 90%;
+    }
+    h1 img {
+        max-width: 50%;
+        height: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    .cadastro-item.cadastro-capa {
+        height: 310px;
+    }
+    div#checkbox-1,
+    div#checkbox-2  {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .enquete h4 {
+        width: 100% !important;
+    }
+    form[data-design=default] .forminator-response-message {
+        margin: -180px 0 20px;
+        padding: 0;
+        border-radius: 2px;
+        text-align: left;
+        font-family: 'Rubrik' !important;
+    }
+}
